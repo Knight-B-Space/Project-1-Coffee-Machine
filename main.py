@@ -20,3 +20,11 @@ def check_resource():
     return enough
 
 
+def process_coins():
+    n_quarter = int(input("How many quarters?"))
+    n_dimes = int(input("How many dimes?"))
+    n_nickles = int(input("How many nickles?"))
+    n_pennies = int(input("How many pennies?"))
+    quarters, dimes, nickles, pennies = (0.25, 0.1, 0.05, 0.01)
+    total_money = sum(n_quarter*quarters, n_dimes*dimes, n_nickles*nickles, n_pennies*pennies)
+    return total_money
